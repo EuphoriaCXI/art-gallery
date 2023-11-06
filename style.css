@@ -1,8 +1,8 @@
 :root {
-  --Brown: hsl(24, 49%, 84%);
-  --Black: hsl(0, 0, 8%);
-  --Grey: hsl(0, 0%, 27%);
-  --White: hsl(0 0%, 100%);
+  --Gold: hsla(24, 56%, 63%, 1);
+  --Almost-Black: hsla(0, 0%, 8%, 1);
+  --Dark-Grey: hsl(0, 0%, 27%, 1);
+  --White: hsl(0, 0%, 100%, 1);
 }
 
 /* CSS Reset */
@@ -61,7 +61,138 @@ h6 {
 /* Styling */
 .button {
   display: block;
-  width: 260px;
+  width: 204px;
   height: 72px;
+  background-color: var(--Black);
   border: 1px solid var(--Brown);
+  text-decoration: none;
+}
+
+/* Hero */
+.hero img {
+  margin: 0;
+}
+
+.hero h1 {
+  width: 283px;
+  margin: 32px 16px;
+  color: var(--Almost-Black, #151515);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  margin: 32px 16px;
+  color: var(--Dark-Grey, #444);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.hero__button {
+  position: relative;
+  margin: 32px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Almost-Black);
+  color: var(--White);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 20px;
+  letter-spacing: 3.636px;
+  text-transform: uppercase;
+}
+
+.right-arrow__mobile {
+  position: absolute;
+  right: -56px;
+}
+
+/* Benefits */
+.benefits,
+.inspiration {
+  margin: 0 16px;
+}
+
+.benefits img {
+  margin-top: 120px;
+}
+
+.benefits h2 {
+  margin-top: 25px;
+  margin-bottom: 21px;
+  color: var(--Almost-Black, #151515);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.benefits p {
+  color: var(--Dark-Grey, #444);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.benefits img:nth-of-type(2) {
+  margin-top: 32px;
+}
+
+.benefits img:nth-of-type(3) {
+  margin-top: 16px;
+}
+
+/* Inspiration */
+.inspiration {
+  background-color: var(--Almost-Black);
+  padding: 48px 24px 47px;
+  margin-top: 16px;
+}
+
+.inspiration h2 {
+  color: var(--White, #fff);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 50px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.inspiration p {
+  margin-top: 24px;
+  color: var(--White, #fff);
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  width: 295px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--Almost-Black);
+  padding: 48px 32px;
+  margin-top: 120px;
+}
+
+footer p {
+  margin: 38px 0;
+  color: var(--White, #fff);
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin-bottom: 0;
 }
