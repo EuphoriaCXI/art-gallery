@@ -1,0 +1,67 @@
+:root {
+  --Brown: hsl(24, 49%, 84%);
+  --Black: hsl(0, 0, 8%);
+  --Grey: hsl(0, 0%, 27%);
+  --White: hsl(0 0%, 100%);
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 32px;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Styling */
+.button {
+  display: block;
+  width: 260px;
+  height: 72px;
+  border: 1px solid var(--Brown);
+}
