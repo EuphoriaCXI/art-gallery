@@ -6,6 +6,7 @@
 }
 
 /* CSS Reset */
+/* -------------- */
 *,
 *::before,
 *::after {
@@ -15,16 +16,6 @@
 * {
   padding: 0;
   margin: 0;
-}
-
-body {
-  max-width: 1440px;
-  margin: 0 auto;
-  font-family: "Outfit", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  line-height: 32px;
-  -webkit-font-smoothing: antialiased;
 }
 
 img,
@@ -59,6 +50,32 @@ h6 {
 }
 
 /* Styling */
+/* -------------- */
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: 3.4375rem;
+}
+
+h2 {
+  font-size: 3.125rem;
+  line-height: 2.8125rem;
+}
+
 .button {
   display: block;
   width: 204px;
@@ -69,18 +86,12 @@ h6 {
 }
 
 /* Hero */
-.hero img {
-  margin: 0;
-}
-
+/* -------------- */
 .hero h1 {
   width: 283px;
   margin: 32px 16px;
   color: var(--Almost-Black, #151515);
   font-family: "Big Shoulders Display", sans-serif;
-  font-size: 60px;
-  font-style: normal;
-  line-height: 55px;
   text-transform: uppercase;
 }
 
@@ -114,6 +125,7 @@ h6 {
 }
 
 /* Benefits */
+/* -------------- */
 .benefits,
 .inspiration {
   margin: 0 16px;
@@ -121,15 +133,14 @@ h6 {
 
 .benefits img {
   margin-top: 120px;
+  width: 100%;
+  /* height: auto;  */
 }
 
 .benefits h2 {
   margin-top: 25px;
   margin-bottom: 21px;
   color: var(--Almost-Black, #151515);
-  font-family: "Big Shoulders Display", sans-serif;
-  font-size: 50px;
-  line-height: 45px;
   text-transform: uppercase;
 }
 
@@ -149,6 +160,7 @@ h6 {
 }
 
 /* Inspiration */
+/* -------------- */
 .inspiration {
   background-color: var(--Almost-Black);
   padding: 48px 24px 47px;
@@ -157,9 +169,6 @@ h6 {
 
 .inspiration h2 {
   color: var(--White, #fff);
-  font-family: "Big Shoulders Display", sans-serif;
-  font-size: 50px;
-  line-height: 45px;
   text-transform: uppercase;
 }
 
@@ -168,13 +177,13 @@ h6 {
   color: var(--White, #fff);
   font-family: Outfit;
   font-size: 18px;
-  font-style: normal;
   font-weight: 300;
   line-height: 28px;
   width: 295px;
 }
 
 /* Footer */
+/* -------------- */
 footer {
   background-color: var(--Almost-Black);
   padding: 48px 32px;
@@ -192,7 +201,78 @@ footer p {
 footer ul {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 23px;
   list-style: none;
   margin-bottom: 0;
+}
+
+/* LOCATION PAGE */
+/* -------------- */
+
+/* Map */
+/* -------------- */
+.location__map {
+  position: relative;
+}
+
+.location__button {
+  position: absolute;
+  left: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Almost-Black);
+  color: var(--White);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 3.636px;
+  text-transform: uppercase;
+}
+
+.left-arrow__mobile {
+  position: absolute;
+  left: -56px;
+}
+
+/* Address */
+/* -------------- */
+.location__address {
+  background-color: var(--Almost-Black);
+  color: var(--White);
+  padding: 48px 16px 56px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+address {
+  font-style: normal;
+}
+
+.address__style {
+  margin-top: 48px;
+  color: var(--Gold);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.address__city {
+  margin-top: 20px;
+}
+
+.address__country {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+/* -------------- */
+.location__footer {
+  margin-top: 0;
+  background-color: var(--Gold);
+}
+
+.location__footer p {
+  color: var(--Almost-Black);
 }

@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Art gallery website</title>
+    <meta name="description" content="The location of where Modern Art Gallery is" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon-location.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="location__map">
+        <nav aria-label="Back to home">
+          <a class="button location__button" href="./index.html"
+            ><img class="left-arrow__mobile" src="./assets/icon-arrow-left.svg" alt="" /> Back to
+            Home</a
+          >
+        </nav>
+        <img
+          srcset="./assets/mobile/image-map.png 372w, ./assets/mobile/image-map@2x.png 750w"
+          sizes="(max-width: 600px) 100vw, (min-width: 601px) 100vw"
+          src="./assets/mobile/image-map.jpg"
+          alt="Two people observing a painting in an art gallery"
+        />
+      </section>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Art gallery website</title>
-</head>
-<body>
+      <section class="location__address">
+        <h2>Our location</h2>
+        <address>
+          <div class="address__style">99 King Street</div>
+          <div class="address__city">Newport</div>
+          <div class="address__state-zip">RI 02840</div>
+          <div class="address__country">United States of America</div>
+        </address>
+        <p>
+          Our newly opened gallery is located near the Edward King House on 99 King Street, the
+          Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm.
+        </p>
+      </section>
+    </main>
 
-  Back to Home
-
-  Our location
-
-  99 King Street
-  Newport
-  RI 02840
-  United States of America
-
-  Our newly opened gallery is located near the Edward King House on 99 King 
-  Street, the Modern Art Gallery is free to all visitors and open seven days 
-  a week from 8am to 9pm.
-
-  Modern Art Gallery
-
-  The Modern Art Gallery is free to all visitors and open seven days a week 
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-
-</body>
+    <footer class="location__footer">
+      <img src="./assets/logo-dark.svg" alt="Modern Art Gallery Logo" />
+      <p>
+        Modern Art Gallery The Modern Art Gallery is free to all visitors and open seven days a week
+        from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+      </p>
+      <ul>
+        <li>
+          <a href="https://facebook.com" aria-label="Modern Art Gallery on Facebook">
+            <img src="./assets/icon-facebook-dark.svg" alt="Facebook logo" />
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com" aria-label="Modern Art Gallery on Instagram">
+            <img src="./assets/icon-instagram-dark.svg" alt="Instagram logo" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" aria-label="Modern Art Gallery on Twitter">
+            <img src="./assets/icon-twitter-dark.svg" alt="Twitter logo" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
