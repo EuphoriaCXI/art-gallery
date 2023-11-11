@@ -23,12 +23,22 @@
             Home</a
           >
         </nav>
-        <img
-          srcset="./assets/mobile/image-map.png 372w, ./assets/mobile/image-map@2x.png 750w"
-          sizes="(max-width: 600px) 100vw, (min-width: 601px) 100vw"
-          src="./assets/mobile/image-map.jpg"
-          alt="Two people observing a painting in an art gallery"
-        />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/desktop/image-map.png 1440w, ./assets/desktop/image-map@2x.png 2880w"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1023px)"
+            srcset="./assets/tablet/image-map.png 768w, ./assets/tablet/image-map@2x.png 1536w"
+          />
+          <img
+            src="./assets/mobile/image-map.png"
+            srcset="./assets/mobile/image-map.png 375w, ./assets/mobile/image-map@2x.png 750w"
+            alt="Map location of where Modern Art Gallery is located"
+            sizes="(max-width: 767px) 100vw"
+          />
+        </picture>
       </section>
 
       <section class="location__address">

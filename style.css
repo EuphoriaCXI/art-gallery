@@ -132,9 +132,8 @@ h2 {
 }
 
 .benefits img {
-  margin-top: 120px;
+  margin-top: 16px;
   width: 100%;
-  /* height: auto;  */
 }
 
 .benefits h2 {
@@ -144,6 +143,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.h2__subtext {
+  display: block;
+}
+
 .benefits p {
   color: var(--Dark-Grey, #444);
   font-family: "Outfit", sans-serif;
@@ -151,12 +154,12 @@ h2 {
   line-height: 28px;
 }
 
-.benefits img:nth-of-type(2) {
-  margin-top: 32px;
+.benefits picture:nth-of-type(1) img {
+  margin-top: 120px;
 }
 
-.benefits img:nth-of-type(3) {
-  margin-top: 16px;
+.benefits picture:nth-of-type(2) img {
+  margin-top: 32px;
 }
 
 /* Inspiration */
@@ -275,4 +278,55 @@ address {
 
 .location__footer p {
   color: var(--Almost-Black);
+}
+
+@media screen and (min-width: 320px) {
+}
+
+/* Tablet Viewport */
+/* -------------- */
+@media screen and (min-width: 768px) {
+  .hero {
+    position: relative;
+  }
+
+  .hero picture img {
+    width: 437px;
+  }
+
+  .benefits picture:nth-of-type(1) img,
+  .benefits picture:nth-of-type(2) img {
+    width: 398px;
+  }
+
+  .benefits picture:nth-of-type(3) img {
+    width: 280px;
+  }
+
+  /* Location page */
+  .location__map picture img {
+    width: 1262.19px;
+  }
+}
+
+/* Desktop Viewport */
+/* -------------- */
+@media screen and (min-width: 1024px) {
+  .hero picture img {
+    width: 540px;
+  }
+
+  .benefits picture:nth-of-type(1) img,
+  .benefits picture:nth-of-type(2) img {
+    width: 635px;
+  }
+
+  .benefits picture:nth-of-type(3) img {
+    width: 445px;
+  }
+
+  /* Location page */
+  .location__map picture img {
+    width: 1440.901px;
+  }
 }
