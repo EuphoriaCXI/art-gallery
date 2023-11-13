@@ -108,6 +108,7 @@ h2 {
 .hero__button {
   position: relative;
   margin: 32px 16px;
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,19 +125,17 @@ h2 {
   right: -56px;
 }
 
-/* Benefits */
+/* Container */
 /* -------------- */
-.benefits,
-.inspiration {
+.container {
   margin: 0 16px;
 }
 
-.benefits img {
-  margin-top: 16px;
+.container img {
   width: 100%;
 }
 
-.benefits h2 {
+.container h2 {
   margin-top: 25px;
   margin-bottom: 21px;
   color: var(--Almost-Black, #151515);
@@ -147,35 +146,42 @@ h2 {
   display: block;
 }
 
-.benefits p {
+.container p {
   color: var(--Dark-Grey, #444);
   font-family: "Outfit", sans-serif;
   font-size: 18px;
   line-height: 28px;
 }
 
-.benefits picture:nth-of-type(1) img {
+.box__one {
+  display: grid;
+}
+
+.box__one picture {
+  grid-row: 1;
   margin-top: 120px;
 }
 
-.benefits picture:nth-of-type(2) img {
+.box__three {
+  margin-top: 16px;
+}
+
+.box__two img {
   margin-top: 32px;
 }
 
-/* Inspiration */
-/* -------------- */
-.inspiration {
+.box__four {
   background-color: var(--Almost-Black);
   padding: 48px 24px 47px;
   margin-top: 16px;
 }
 
-.inspiration h2 {
+.box__four h2 {
   color: var(--White, #fff);
   text-transform: uppercase;
 }
 
-.inspiration p {
+.box__four p {
   margin-top: 24px;
   color: var(--White, #fff);
   font-family: Outfit;
@@ -286,26 +292,195 @@ address {
 /* Tablet Viewport */
 /* -------------- */
 @media screen and (min-width: 768px) {
-  .hero {
-    position: relative;
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 48px;
+    margin: 145px 40px 0 389px;
+  }
+
+  .hero h1 {
+    color: var(--Almost-Black, #151515);
+    font-family: Big Shoulders Display;
+    font-size: 4.375rem;
+    font-weight: 900;
+    line-height: 65px; /* 92.857% */
+    text-transform: uppercase;
+    /* width: 100%; */
+  }
+
+  .h1__subtext {
+    display: block;
+    width: 118%;
+  }
+
+  .hero p {
+    width: 339px;
+  }
+
+  .hero a {
+    right: 135px;
+  }
+
+  .hero h1,
+  .hero p,
+  .hero a {
+    margin: 0;
+  }
+
+  section.hero .hero__text h1 {
+    margin-right: 55px;
   }
 
   .hero picture img {
     width: 437px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
   }
 
-  .benefits picture:nth-of-type(1) img,
-  .benefits picture:nth-of-type(2) img {
+  .container {
+    display: grid;
+    width: 689px;
+    margin: 120px auto;
+    max-width: calc(100% - 80px);
+  }
+
+  /* Container for
+- Box One
+- Box Two
+- Box Three
+*/
+  /* ---------- */
+  .container__two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 202px;
+    gap: 11px;
+  }
+
+  /* First Box */
+  /* ------------ */
+  .box__one {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+  }
+
+  .box__one picture {
     width: 398px;
+    height: 400px;
   }
 
-  .benefits picture:nth-of-type(3) img {
+  .one__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    width: 223px;
+  }
+
+  .one__text h2 {
+    color: var(--Almost-Black, #151515);
+    font-family: Big Shoulders Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 45px; /* 90% */
+    text-transform: uppercase;
+  }
+
+  .one__text p {
+    color: var(--Dark-Grey, #444);
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 155.556% */
+  }
+
+  /* Second Box */
+  /* ------------ */
+  .box__two picture {
+    width: 398px;
+    height: 720px;
+  }
+
+  .box__two img {
+    margin-top: 0;
+  }
+
+  /* Second Box */
+  /* ------------ */
+  .box__three {
+    margin-top: 0;
+  }
+
+  /* Fourth Box */
+  /* ------------ */
+  .box__four {
+    grid-row: 3;
+    grid-column: 2;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .four__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
     width: 280px;
+    padding: 62px 29px;
+    background: var(--Almost-Black, #151515);
+    color: white;
+  }
+
+  .four__text h2 {
+    font-family: Big Shoulders Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 45px; /* 90% */
+    text-transform: uppercase;
+  }
+
+  .four__text p {
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 155.556% */
+    width: 223px;
   }
 
   /* Location page */
+  /* -------------- */
   .location__map picture img {
     width: 1262.19px;
+  }
+
+  /* Footer */
+  /* -------------- */
+  footer {
+    padding: 56px 40px;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer p {
+    margin: 0;
+    width: 281px;
+  }
+
+  .footer__socials {
+    justify-self: flex-end;
   }
 }
 
@@ -316,7 +491,7 @@ address {
     width: 540px;
   }
 
-  .benefits picture:nth-of-type(1) img,
+  .container picture:nth-of-type(1) img,
   .benefits picture:nth-of-type(2) img {
     width: 635px;
   }
