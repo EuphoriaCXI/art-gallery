@@ -348,6 +348,10 @@ address {
     max-width: calc(100% - 80px);
   }
 
+  .container h2 {
+    margin-top: 88px;
+  }
+
   /* Container for
 - Box One
 - Box Two
@@ -457,12 +461,6 @@ address {
     width: 223px;
   }
 
-  /* Location page */
-  /* -------------- */
-  .location__map picture img {
-    width: 1262.19px;
-  }
-
   /* Footer */
   /* -------------- */
   footer {
@@ -481,6 +479,53 @@ address {
 
   .footer__socials {
     justify-self: flex-end;
+  }
+
+  /* Location page */
+  /* -------------- */
+  .location__map picture img {
+    width: 1262.19px;
+  }
+
+  .location__button {
+    left: 99px;
+  }
+
+  .location__address {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 88px 40px 80px 39px;
+  }
+
+  .location__address h2 {
+    width: 223px;
+  }
+
+  .location__address address {
+    margin-top: 0;
+  }
+
+  .address__style {
+    margin-top: 0;
+  }
+
+  .location__address p {
+    grid-column: 2;
+    width: 398px;
+  }
+
+  .location__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .location__footer ul {
+    align-items: flex-start;
+    justify-self: flex-end;
+  }
+
+  .location__footer p {
+    width: 281px;
   }
 }
 
